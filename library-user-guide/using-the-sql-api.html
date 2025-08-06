@@ -22,20 +22,19 @@
       
   
     
-    <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=a746c00c" />
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=8f2a1f02" />
     <link rel="stylesheet" type="text/css" href="../_static/styles/pydata-sphinx-theme.css?v=1140d252" />
     <link rel="stylesheet" type="text/css" href="../_static/theme_overrides.css?v=c6d785ac" />
     
     <link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=1999514e3f237ded88cf">
   
     <script src="../_static/documentation_options.js?v=8a448e45"></script>
-    <script src="../_static/doctools.js?v=9a2dae69"></script>
+    <script src="../_static/doctools.js?v=9bcbadda"></script>
     <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
-    <script async="true" defer="true" src="https://buttons.github.io/buttons.js"></script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
     <link rel="next" title="Working with Exprs" href="working-with-exprs.html" />
-    <link rel="prev" title="Introduction" href="index.html" />
+    <link rel="prev" title="Extensions List" href="extensions.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="en">
     
@@ -152,6 +151,16 @@
   </a>
  </li>
  <li class="toctree-l1">
+  <a class="reference internal" href="../user-guide/features.html">
+   Features
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../user-guide/concepts-readings-events.html">
+   Concepts, Readings, Events
+  </a>
+ </li>
+ <li class="toctree-l1">
   <a class="reference internal" href="../user-guide/crate-configuration.html">
    Crate Configuration
   </a>
@@ -245,7 +254,7 @@
    </li>
    <li class="toctree-l2">
     <a class="reference internal" href="../user-guide/sql/operators.html">
-     Operators
+     Operators and Literals
     </a>
    </li>
    <li class="toctree-l2">
@@ -264,13 +273,18 @@
     </a>
    </li>
    <li class="toctree-l2">
-    <a class="reference internal" href="../user-guide/sql/sql_status.html">
-     Status
+    <a class="reference internal" href="../user-guide/sql/special_functions.html">
+     Special Functions
     </a>
    </li>
    <li class="toctree-l2">
-    <a class="reference internal" href="../user-guide/sql/write_options.html">
-     Write Options
+    <a class="reference internal" href="../user-guide/sql/format_options.html">
+     Format Options
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../user-guide/sql/prepared_statements.html">
+     Prepared Statements
     </a>
    </li>
   </ul>
@@ -278,6 +292,11 @@
  <li class="toctree-l1">
   <a class="reference internal" href="../user-guide/configs.html">
    Configuration Settings
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../user-guide/explain-usage.html">
+   Reading Explain Plans
   </a>
  </li>
  <li class="toctree-l1">
@@ -295,6 +314,16 @@
  <li class="toctree-l1">
   <a class="reference internal" href="index.html">
    Introduction
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="upgrading.html">
+   Upgrade Guides
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="extensions.html">
+   Extensions List
   </a>
  </li>
  <li class="toctree-l1 current active">
@@ -328,14 +357,36 @@
    Catalogs, Schemas, and Tables
   </a>
  </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="adding-udfs.html">
-   Adding User Defined Functions: Scalar/Window/Aggregate/Table Functions
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="functions/index.html">
+   Functions
   </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" type="checkbox"/>
+  <label for="toctree-checkbox-3">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="functions/adding-udfs.html">
+     Adding User Defined Functions: Scalar/Window/Aggregate/Table Functions
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="functions/spark.html">
+     Spark Compatible Functions
+    </a>
+   </li>
+  </ul>
  </li>
  <li class="toctree-l1">
   <a class="reference internal" href="custom-table-providers.html">
    Custom Table Provider
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="table-constraints.html">
+   Table Constraint Enforcement
   </a>
  </li>
  <li class="toctree-l1">
@@ -371,8 +422,8 @@
   </a>
  </li>
  <li class="toctree-l1">
-  <a class="reference internal" href="../contributor-guide/getting_started.html">
-   Getting Started
+  <a class="reference internal" href="../contributor-guide/development_environment.html">
+   Development Environment
   </a>
  </li>
  <li class="toctree-l1">
@@ -383,6 +434,11 @@
  <li class="toctree-l1">
   <a class="reference internal" href="../contributor-guide/testing.html">
    Testing
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../contributor-guide/api-health.html">
+   API health policy
   </a>
  </li>
  <li class="toctree-l1">
@@ -409,8 +465,8 @@
   <a class="reference internal" href="../contributor-guide/specification/index.html">
    Specifications
   </a>
-  <input class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" type="checkbox"/>
-  <label for="toctree-checkbox-3">
+  <input class="toctree-checkbox" id="toctree-checkbox-4" name="toctree-checkbox-4" type="checkbox"/>
+  <label for="toctree-checkbox-4">
    <i class="fas fa-chevron-down">
    </i>
   </label>
@@ -426,6 +482,16 @@
     </a>
    </li>
   </ul>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../contributor-guide/gsoc_application_guidelines.html">
+   GSoC Application Guidelines
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../contributor-guide/gsoc_project_ideas.html">
+   GSoC Project Ideas
+  </a>
  </li>
 </ul>
 <p aria-level="2" class="caption" role="heading">
@@ -603,13 +669,13 @@ work with DataFrames.</p>
 <span class="w">    </span><span class="c1">// register the &quot;example&quot; table</span>
 <span class="w">    </span><span class="n">ctx</span><span class="p">.</span><span class="n">register_csv</span><span class="p">(</span><span class="s">&quot;example&quot;</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;tests/data/example.csv&quot;</span><span class="p">,</span><span class="w"> </span><span class="n">CsvReadOptions</span><span class="p">::</span><span class="n">new</span><span class="p">()).</span><span class="k">await</span><span class="o">?</span><span class="p">;</span>
 <span class="w">    </span><span class="c1">// create a plan to run a SQL query</span>
-<span class="w">    </span><span class="kd">let</span><span class="w"> </span><span class="n">df</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">ctx</span><span class="p">.</span><span class="n">sql</span><span class="p">(</span><span class="s">&quot;SELECT a, MIN(b) FROM example WHERE a &lt;= b GROUP BY a LIMIT 100&quot;</span><span class="p">).</span><span class="k">await</span><span class="o">?</span><span class="p">;</span>
+<span class="w">    </span><span class="kd">let</span><span class="w"> </span><span class="n">df</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">ctx</span><span class="p">.</span><span class="n">sql</span><span class="p">(</span><span class="s">&quot;SELECT a, min(b) FROM example WHERE a &lt;= b GROUP BY a LIMIT 100&quot;</span><span class="p">).</span><span class="k">await</span><span class="o">?</span><span class="p">;</span>
 <span class="w">    </span><span class="c1">// execute the plan and collect the results as Vec&lt;RecordBatch&gt;</span>
 <span class="w">    </span><span class="kd">let</span><span class="w"> </span><span class="n">results</span><span class="p">:</span><span class="w"> </span><span class="nb">Vec</span><span class="o">&lt;</span><span class="n">RecordBatch</span><span class="o">&gt;</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">df</span><span class="p">.</span><span class="n">collect</span><span class="p">().</span><span class="k">await</span><span class="o">?</span><span class="p">;</span>
 <span class="w">    </span><span class="c1">// Use the assert_batches_eq macro to compare the results with expected output</span>
 <span class="w">    </span><span class="n">datafusion</span><span class="p">::</span><span class="n">assert_batches_eq</span><span class="o">!</span><span class="p">(</span><span class="fm">vec!</span><span class="p">[</span>
 <span class="w">        </span><span class="s">&quot;+---+----------------+&quot;</span><span class="p">,</span>
-<span class="w">        </span><span class="s">&quot;| a | MIN(example.b) |&quot;</span><span class="p">,</span>
+<span class="w">        </span><span class="s">&quot;| a | min(example.b) |&quot;</span><span class="p">,</span>
 <span class="w">        </span><span class="s">&quot;+---+----------------+&quot;</span><span class="p">,</span>
 <span class="w">        </span><span class="s">&quot;| 1 | 2              |&quot;</span><span class="p">,</span>
 <span class="w">        </span><span class="s">&quot;+---+----------------+&quot;</span><span class="p">,</span>
@@ -769,11 +835,11 @@ statement.</p>
               
               <!-- Previous / next buttons -->
 <div class='prev-next-area'>
-    <a class='left-prev' id="prev-link" href="index.html" title="previous page">
+    <a class='left-prev' id="prev-link" href="extensions.html" title="previous page">
         <i class="fas fa-angle-left"></i>
         <div class="prev-next-info">
             <p class="prev-next-subtitle">previous</p>
-            <p class="prev-next-title">Introduction</p>
+            <p class="prev-next-title">Extensions List</p>
         </div>
     </a>
     <a class='right-next' id="next-link" href="working-with-exprs.html" title="next page">
@@ -799,13 +865,13 @@ statement.</p>
     
     <div class="footer-item">
       <p class="copyright">
-    &copy; Copyright 2019-2024, Apache Software Foundation.<br>
+    &copy; Copyright 2019-2025, Apache Software Foundation.<br>
 </p>
     </div>
     
     <div class="footer-item">
       <p class="sphinx-version">
-Created using <a href="http://sphinx-doc.org/">Sphinx</a> 7.4.7.<br>
+Created using <a href="http://sphinx-doc.org/">Sphinx</a> 8.2.3.<br>
 </p>
     </div>
     
